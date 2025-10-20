@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Oliveira | Portfólio Tech & Criativo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- botao do zap-->
+    <a href="https://wa.me/SEUNUMERO" target="_blank"
+       class="fixed bottom-6 right-6 z-50 p-4 rounded-full text-white font-semibold shadow-2xl btn-gradient animate-pulse-slow flex items-center justify-center"
+       aria-label="Converse Comigo no WhatsApp">
+       <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <!-- cabecalho -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-main/80 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Matheus Oliveira</a>
+            <nav class="hidden md:flex space-x-8 text-lg">
+                <a href="#sobre" class="hover:text-highlight-soft transition-colors">Sobre Mim</a>
+                <a href="#qualificacoes" class="hover:text-highlight-soft transition-colors">Qualificações</a>
+                <a href="#projetos" class="hover:text-highlight-soft transition-colors">Projetos</a>
+                <a href="#contato" class="hover:text-highlight-soft transition-colors">Contato</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary text-center">
+            <a href="#sobre" class="block py-3 hover:bg-main">Sobre Mim</a>
+            <a href="#qualificacoes" class="block py-3 hover:bg-main">Qualificações</a>
+            <a href="#projetos" class="block py-3 hover:bg-main">Projetos</a>
+            <a href="#contato" class="block py-3 hover:bg-main">Contato</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- sobre mim -->
+        <section id="sobre" class="min-h-screen flex items-center pt-24 md:pt-0 bg-main">
+            <div class="container mx-auto px-6 reveal">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="md:w-3/5 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">Unindo lógica, criatividade e resultados.</h1>
+                        <p class="text-lg text-gray-300 mb-8">
+                            Olá! Sou Matheus Oliveira, tenho 20 anos e moro em Garanhuns (PE). Sou apaixonado por tecnologia, design e estratégias digitais. Meu objetivo é prosperar na carreira tech e me tornar um profissional completo.
+                        </p>
+                        <a href="#" class="inline-block px-8 py-3 rounded-lg text-white font-semibold btn-gradient">
+                            Baixar Currículo
+                        </a>
+                    </div>
+                    <div class="md:w-2/5 flex justify-center">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-highlight-vibrant shadow-2xl">
+                            <img src="https://placehold.co/400x400/1a1a1a/DC2626?text=MO" alt="Foto de Matheus Oliveira" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- qualificacoes -->
+        <section id="qualificacoes" class="py-20 bg-secondary">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Minhas Qualificações</h2>
+                    <p class="text-gray-400 mt-2">Um conjunto de habilidades para criar soluções completas.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- java -->
+                    <div class="bg-main p-8 rounded-xl border border-transparent card-glow transition-all duration-300 reveal">
+                        <i data-lucide="code-2" class="w-12 h-12 text-highlight-soft mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Programador Java</h3>
+                        <p class="text-gray-300">Desenvolvimento orientado a objetos, estruturas de dados, e aplicações CLI/Web.</p>
+                    </div>
+                    <!-- trafico rsrs -->
+                    <div class="bg-main p-8 rounded-xl border border-transparent card-glow transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                        <i data-lucide="trending-up" class="w-12 h-12 text-highlight-soft mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Gestor de Tráfego</h3>
+                        <p class="text-gray-300">Estratégias em Meta Ads, análise de métricas e otimização de campanhas.</p>
+                    </div>
+                    <!-- designer -->
+                    <div class="bg-main p-8 rounded-xl border border-transparent card-glow transition-all duration-300 reveal" style="transition-delay: 200ms;">
+                        <i data-lucide="palette" class="w-12 h-12 text-highlight-soft mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Designer</h3>
+                        <p class="text-gray-300">Criativos para anúncios, identidade visual e manipulação de imagens (GIMP).</p>
+                    </div>
+                    <!-- vendas prospeccao -->
+                    <div class="bg-main p-8 rounded-xl border border-transparent card-glow transition-all duration-300 reveal" style="transition-delay: 300ms;">
+                        <i data-lucide="handshake" class="w-12 h-12 text-highlight-soft mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Prospector de Vendas</h3>
+                        <p class="text-gray-300">Relacionamento com leads, atendimento e estratégias de conversão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projetos java -->
+        <section id="projetos" class="py-20 bg-main">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Projetos em Destaque (Java)</h2>
+                    <p class="text-gray-400 mt-2">Explorando conceitos e construindo soluções práticas.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- projeto 1 -->
+                    <div class="bg-secondary p-8 rounded-xl group reveal transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold mb-2">Sistema de Controle de Estoque (CLI)</h3>
+                        <p class="text-gray-300 mb-4">Aplicação de console para gerenciar produtos, entradas e saídas, reforçando conceitos de CRUD e manipulação de dados.</p>
+                        <a href="#" class="text-highlight-soft font-semibold group-hover:underline flex items-center">
+                            Ver no GitHub <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                    <!-- projeto 2 -->
+                    <div class="bg-secondary p-8 rounded-xl group reveal transform hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 100ms;">
+                        <h3 class="text-xl font-bold mb-2">App de Rastreamento de Ônibus</h3>
+                        <p class="text-gray-300 mb-4">Projeto acadêmico (Codify) para simular o rastreamento de transporte público, aplicando lógica de geolocalização e horários.</p>
+                        <a href="#" class="text-highlight-soft font-semibold group-hover:underline flex items-center">
+                            Ver Detalhes <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                    <!-- projeto 3 -->
+                    <div class="bg-secondary p-8 rounded-xl group reveal transform hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 200ms;">
+                        <h3 class="text-xl font-bold mb-2">Simulador de Conta Bancária</h3>
+                        <p class="text-gray-300 mb-4">Implementação de conta corrente e poupança utilizando POO, Herança e Polimorfismo para gerenciar saldos, saques e depósitos.</p>
+                        <a href="#" class="text-highlight-soft font-semibold group-hover:underline flex items-center">
+                            Ver no GitHub <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                    <!-- projeto 4 -->
+                    <div class="bg-secondary p-8 rounded-xl group reveal transform hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 300ms;">
+                        <h3 class="text-xl font-bold mb-2">Calculadora de Média de Alunos</h3>
+                        <p class="text-gray-300 mb-4">Ferramenta simples para calcular médias, aprovação e recuperação, ideal para praticar lógica de programação e condicionais.</p>
+                        <a href="#" class="text-highlight-soft font-semibold group-hover:underline flex items-center">
+                            Ver no GitHub <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- rodaspeis -->
+    <footer id="contato" class="py-16 bg-secondary text-center">
+        <div class="container mx-auto px-6 reveal">
+            <h2 class="text-3xl font-bold text-white mb-4">Vamos criar algo incrível juntos?</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8">
+                Estou sempre em busca de novos desafios e oportunidades de colaboração. Se você tem um projeto em mente ou quer simplesmente trocar uma ideia, meu canal está aberto!
+            </p>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="mailto:email@exemplo.com" class="hover:text-highlight-soft transition-colors"><i data-lucide="mail" class="w-8 h-8"></i></a>
+                <a href="#" class="hover:text-highlight-soft transition-colors"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                <a href="#" class="hover:text-highlight-soft transition-colors"><i data-lucide="github" class="w-8 h-8"></i></a>
+            </div>
+            <p class="text-gray-500 mt-12">&copy; 2025 Matheus Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

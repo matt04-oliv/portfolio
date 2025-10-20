@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.bg-main { background-color: #1a1a1a; }
+.bg-secondary { background-color: #2c2c2c; }
+.text-highlight-soft { color: #DC2626; }
+.text-highlight-vibrant { color: #B91C1C; }
+.border-highlight-vibrant { border-color: #B91C1C; }
+
+.btn-gradient {
+    background-image: linear-gradient(to right, #B91C1C, #DC2626);
+    transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(185, 28, 28, 0.5);
+}
+
+nav a {
+    position: relative;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #DC2626;
+    transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+.card-glow:hover {
+    border-color: #DC2626;
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
+    transform: translateY(-5px);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.animate-pulse-slow {
+    animation: pulse 5s infinite;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
